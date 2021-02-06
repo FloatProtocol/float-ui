@@ -1,0 +1,148 @@
+.general-modal {
+    height: 17rem;
+    width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    background-color: var(--bg-color-4);
+    outline: none;
+}
+
+.general-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color-5);
+    background-image: url('../../assets/float/curves_modal_background.svg');
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: center center;
+
+}
+
+.general-modal-container {
+    padding: 1rem 3rem;
+}
+
+.close-modal-button {
+    position: relative;
+    float: right;
+    left: 0.5rem;
+    top: -1rem;
+    margin-right: -4rem;
+    margin-bottom: -5rem;
+    width: 1.5rem;
+    height: auto;
+    outline: none;
+}
+
+.modal-header {
+    display: grid;
+    grid-template-columns: minmax(0,8fr) minmax(0,1px) minmax(0,3fr);
+    grid-template-rows: auto;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-size: var(--font-size-2);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: end;
+}
+
+.general-modal .coin-logo {
+    width:2rem;
+    height:auto;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+.modal-subtitle {
+    margin: 0;
+}
+
+.modal-key-info {
+    display: grid;
+    padding-left: 1rem;
+}
+
+.modal-key-info p {
+    margin: 0.1rem 0;
+}
+
+.modal-body {
+    padding-top: 2rem;
+}
+
+.modal-button-group {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.modal-button-group button {
+    width: 100%;
+}
+
+.modal-numeric-value {
+    font-family: 'SourceSansPro-Black';
+    font-size: var(--font-size-2);
+}
+
+.tx-submitted {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tx-submitted h3 {
+    font-size: 20px;
+}
+
+.error-modal .modal-body {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-modal {
+        height: auto;
+        width: 90%;
+        transform: translate(-50%,-60%);
+    }
+
+    .general-modal-container {
+        padding: 1rem 1rem;
+    }
+
+    .close-modal-button {
+        position: relative;
+        float: right;
+        left: -1.5rem;
+        top: -1rem;
+        margin-right: -4rem;
+        margin-bottom: -5rem;
+        width: 1.5rem;
+        height: auto;
+        outline: none;
+    }
+
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-key-info {
+            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.9rem 0;
+    }
+  }

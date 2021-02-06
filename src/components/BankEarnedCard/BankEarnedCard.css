@@ -1,0 +1,100 @@
+.bank-tokens-earned-card-container {
+    display: grid;
+    grid-template-rows: minmax(0,100px) minmax(0,25px) minmax(0,1fr) minmax(0,1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+.bank-logo {
+    width: 50px;
+    height:auto;
+    margin:auto;
+}
+
+.bank-tokens-earned {
+    font-family: 'SourceSansPro-Black';
+    font-size: var(--font-size-4);
+    letter-spacing: var(--letter-spacing-5);
+    color: var(--text-color-1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.claim-bank-tokens-button-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.claim-bank-tokens-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.claim-bank-modal-overlay {
+    position: 'fixed';
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background-color: 'rgba(255, 255, 255, 0.75)';
+}
+
+.claim-bank-modal-content {
+    position: 'absolute';
+    top: '40px';
+    left: '40px';
+    right: '40px';
+    bottom: '40px';
+    border: '1px solid #ccc';
+    background: '#fff';
+    overflow: 'auto';
+    border-radius: '4px';
+    outline: 'none';
+    padding: '20px';
+}
+
+.Modal {
+    height: 250px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    background-color: var(--bg-color-4);
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color-5);
+    background-image: url('../../assets/float/curves_modal_background.svg');
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: center center;
+}
+
+.modal-container {
+    padding: 20px 40px;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.button-choice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.button-choice-container button {
+    margin-right: 10px;
+}

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro'), url(./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: local('SourceSansPro'), url(./assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: local('SourceSansPro'), url(./assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: local('SourceSansPro'), url(./assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf) format('truetype');
+  font-weight: 700;
+}
+
+body {
+  font-family:
+    'SourceSansPro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: var(--font-size-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+button {
+  background-color: var(--bg-color-3);
+  font-family:
+    'SourceSansPro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  color: var(--text-color-2);
+  text-align: center;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  height: 2.9rem;
+  width: 11.188rem;
+}
+
+button.text {
+  background-color: transparent;
+  color: var(--text-color-3);
+  text-align: left;
+  border: none;
+  font-size: var(--font-size-1);
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+button.text:focus {
+  outline: none;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+:root {
+  --bg-color-1: #fff;
+  --bg-color-2: rgba(255, 255, 255, 0.95);
+  --bg-color-3: #4600ff;
+  --bg-color-4: #f4f2f2;
+  --bg-color-5: rgba(15, 15, 15, 0.699);
+  --bg-color-6: rgba(194, 194, 194, 0.911);
+  --text-color-1: black;
+  --text-color-2: white;
+  --text-color-3: #4600ff;
+  --text-color-4: #797979;
+  --text-color-5: #000;
+  --text-color-6: #4f6ae6;
+  --text-color-7: #95a6ef;
+  --font-size-0: 0.844rem;
+  --font-size-1: 0.938rem;
+  --font-size-2: 1.4rem;
+  --font-size-3: 1.64rem;
+  --font-size-4: 1.875rem;
+  --letter-spacing-1: 0.04rem;
+  --letter-spacing-2: 0.28rem;
+  --letter-spacing-3: 0.09rem;
+  --letter-spacing-5: 0.12rem;
+  --border-color-1: rgb(232, 232, 232);
+  --border-color-2: #e3e4e6;
+  --border-radius-1: 3px;
+  --shadow-param-1: 4.213px 5.59px 23.5px 1.5px;
+  --shadow-color-1: rgba(233, 233, 233, 0.61);
+  --shadow-color-2: rgba(0, 0, 0, 0.02);
+}
+
+.theme-dark {
+  --bg-color-1: #202529;
+  --bg-color-2: #2b2f33;
+  --bg-color-3: #fff;
+  --bg-color-4: #f1f1f1;
+  --bg-color-5: rgba(79, 106, 230, 0.08);
+  --bg-color-6: rgba(147, 148, 150, 0.08);
+  --text-color-1: #fff;
+  --text-color-2: #939496;
+  --text-color-3: #ff4339;
+  --text-color-4: #606268;
+  --text-color-5: #fff;
+  --text-color-6: #7288ea;
+  --text-color-7: #4f6ae5;
+  --border-color-1: #44494d;
+  --border-color-2: #ff4339;
+  --shadow-color-1: rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.08);
+}

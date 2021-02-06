@@ -1,0 +1,14 @@
+.panel-container {
+    margin-top: 20px;
+    display: inline-grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 18px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .panel-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 6px;
+    }
+}

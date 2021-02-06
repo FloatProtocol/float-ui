@@ -1,0 +1,91 @@
+.farm-statement-card-container {
+    display: grid;
+    grid-template-rows: minmax(0,100px) minmax(0,25px) minmax(0,1fr) minmax(0,1fr);
+    align-content: center;
+    grid-auto-columns: auto;
+}
+
+
+.farm-statement-card-container .coin-logo {
+    width: 50px;
+    height:auto;
+    margin: auto;
+}
+
+.deposit-value-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    
+}
+.deposit-container {
+    grid-column-start: 2;
+
+}
+
+.user-deposit {
+    font-family: 'SourceSansPro-Black';
+    text-align: left;
+    font-size: var(--font-size-4);
+    letter-spacing: var(--letter-spacing-5);
+    color: var(--text-color-1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.percentage-container {
+    text-align: left;
+    align-self: center;
+    justify-self: start;
+    padding-top: 0.5rem;
+}
+
+.percentage-value {
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.medium-button {
+    max-width: 16rem;
+    width: 100%; 
+    margin: 0 0.5rem;
+}
+
+.approve-farm-button {
+    margin: 0 2rem;
+    max-width: 33rem;
+    width: 100%;
+}
+
+
+@media (max-width: 45rem) {
+    .deposit-value-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+    .medium-button {
+        margin: 0.6rem 0;
+    }
+
+    .approve-farm-button {
+        max-width: 16rem;
+        width: 100%;
+    }
+
+}    
+
+
+

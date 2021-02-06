@@ -1,0 +1,92 @@
+.dropdown {
+    position: absolute;
+    width: 18.75rem;
+    transform: translate(-40%, 0.5rem);
+    background-color: var(--bg-color-1);
+    border: solid var(--bg-color-3);
+    border-width: thin;
+    border-radius: 4px;
+    padding: 1rem 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 2px rgba(92, 92, 92, 0.445);
+    opacity: 0;
+    transition: all 5s ease;
+    z-index: 10;
+    display: none;
+    border-radius: 3px;
+    border: 1px solid var(--border-color-1);
+    box-shadow: var(--shadow-param-1) var(--shadow-color-1);
+}
+
+.dropdown.open {
+    opacity: 1;
+    display: block;
+}
+
+.balances-group {
+    padding-top: 18px;
+}
+
+.balances-group .bank-logo, .balances-group .coin-logo {
+    width: 40px;
+    margin-right: 16px;
+    margin-left: 0;
+}
+
+.balances-group p {
+    font-size: 1.2rem;
+    color: var(--text-color-1);
+}
+
+.menu-item {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    padding: 8px 24px;
+    transition: background 150ms ease-out 0s;
+}
+
+.menu-item:hover {
+    background: var(--bg-color-4);
+}
+
+.dropdown-spacer {
+    margin: 18px 20px;
+    height: 1px;
+    background: var(--bg-color-6);
+}
+
+.dropdown-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.dropdown-header-text {
+    font-weight: 600;
+    margin: 0;
+}
+
+.dropdown-header-badge {
+    color: var(--bg-color-3);
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    transition: all 300ms ease 0s;
+    padding: 0.25rem 0.5rem;
+    border-radius: .375rem;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .dropdown {
+        position: absolute;
+        width: 18.75rem;
+        transform: translate(-23.5%, 0.5rem);
+  }
+}

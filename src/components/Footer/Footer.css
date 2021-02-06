@@ -1,0 +1,20 @@
+.footer-container {
+    margin: 20px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content:  center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--text-color-1);
+}
+
+.footer-col {
+    margin: 5px;
+    color: var(--text-color-1);
+}
+
+.footer-col a {
+    color: var(--text-color-1);
+}
